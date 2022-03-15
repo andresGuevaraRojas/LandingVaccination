@@ -1,0 +1,413 @@
+:root{
+    --principal:#1f3e72;
+    --secondary:#3959d7;
+    --grayFontcolor:#6d7b93;
+    --backgroundColorBlue:#eaefff;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+    position: relative;
+}
+h1{
+    font-size: 4.5vw;
+    font-weight: bold;
+}
+h2{
+    font-size: 2vw;
+    font-weight: bold;
+}
+h3{    
+    font-size: 1.6vw;
+    font-weight: bold;
+}
+p{
+    font-size: 1.5vw;
+}
+.section{
+    width: 100%;
+}
+.header{
+    padding: 10px 10vw;
+    height: 100px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position:fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.header span{
+    color: var(--secondary);
+    font-size: 1.6vw;
+    font-weight: bold;
+}
+.header__nav{
+    width: 67%;
+}
+.header__menu{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.header__link{
+   text-decoration: none;
+   color: var(--grayFontcolor);
+   font-size: 1.2vw;   
+}
+.button{
+    color: white;
+    border-radius: 6px;  
+}
+.header__link.button{
+    background-color: var(--secondary);
+    padding: 10px 16px;    
+}
+.welcome{
+    display: flex;   
+}
+.welcome__left,.welcome_rigth{
+    width: 50%;   
+}
+.welcome__left{
+    padding: 200px 10vw;
+    position: relative;
+}
+.welcome__left__title{
+    color: var(--principal);
+    margin-top: 0;
+    margin-bottom: 10px;    
+}
+.welcome__left_message{
+    color: var(--grayFontcolor);  
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 3em;    
+}
+.welcome__left__icons{   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    max-width: 28vw;
+    margin-bottom: 8em;
+}
+.welcome__left__icons__text{
+    color: var(--principal);  
+    font-weight: bold;
+    font-size: 1vw;
+    margin-left: 5px;
+}
+.icon-yellow{
+    color: #ffd012;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff8de;
+    font-size: 1vw;
+    font-weight: bold;
+}
+.icon-blue{
+    color: var(--principal);
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--backgroundColorBlue) ;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+.welcome__schedule{
+    display: flex;
+    align-items: center;   
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+.welcome__schedule__text{
+    color: var(--principal);
+    font-size: 1.2vw;
+    margin-left: 6px;    
+}
+.welcome__card{
+    min-width: 68vw;
+    position: absolute;
+    padding: 30px;   
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.96);
+    box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+.welcome__card__item{
+    flex: 1;
+    display: flex;    
+}
+
+.welcome__card__item div{
+    display: flex;
+    flex-direction: column;
+}
+.welcome__card_icon{
+    margin-right: 10px;   
+}
+
+.welcome__card button{
+    outline: none;
+    border: none;
+
+    background-color: var(--secondary);
+    padding: 10px 22px;    
+    font-size: 1.2vw;
+}
+.welcome__card__label{
+    color: var(--grayFontcolor);
+    font-size: 1.2vw;
+}
+.welcome__card__value{
+    color: var(--principal);
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+.brands{
+    width: 100%;
+    padding: 0 10vw;
+}
+.brands img{
+    width: 100%;
+}
+.motivation{
+    padding: 0px 10vw 100px 10vw;
+}
+.motivation__title{
+    color: var(--principal);    
+}
+.motiviation__text{
+    color: var(--grayFontcolor);
+    max-width: 42vw;
+}
+.motivation__cards{           
+    display: flex;
+    justify-content: space-between;    
+}
+.motivation__card{
+    border: 2px solid var(--backgroundColorBlue);
+    width: calc(25% - 20px);
+    padding: 3vw;
+}
+.motivation__card__icon{
+    color: var(--principal);        
+}
+.motivation__card__icon > span{
+    background-color: var(--backgroundColorBlue);
+    padding: 10px;
+    font-size: 1.4vw;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.motivation__card__messages span{
+    color: var(--principal);
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.motivation__card__messages p{
+    color:var(--grayFontcolor);
+    font-size: 0.9vw;   
+}
+.preparation{
+    padding: 0px 0 100px 0;
+    width: 100%;
+    display: flex;
+}
+.preparation__image{
+    width: 50%;
+}
+.preparation__content{
+    flex: 1;
+    padding: 0 5vw 0 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.preparation__content > div p{
+    color: var(--grayFontcolor);
+    margin-bottom: 1vh;
+}
+.preparation__title{
+    color: var(--principal);
+    margin-top: 10vh;
+    margin-bottom: 6vh;
+}
+
+
+.preparation__card{
+    padding: 2vw;
+    border: 1px solid var(--backgroundColorBlue);
+    border-radius: 5px;
+    margin-bottom: 4vh;
+    color: var(--principal);
+    font-weight: bold;
+    display: flex;   
+    justify-content: space-between;
+}
+.preparation__card:last-child{
+    margin-bottom: 0;
+}
+.preparation__card-selected{
+    padding: 10px 20px 20px 20px;   
+}
+.preparation__card .material-icons{
+    margin-right: 10px;
+}
+.preparation__card__header{
+    display: flex;    
+}
+.preparation__card__header span{ 
+    font-size: 1.2vw;
+}
+.preparation__card__header__content > span{
+    font-size: 1.2vw;
+}
+
+.preparation__card__header__content > p{
+    font-size: 0.8vw;
+    color: var(--grayFontcolor);
+}
+
+.emergencyContact{
+    padding: 0px 0 100px 0;
+    width: 100%;
+    display: flex;
+}
+.emergencyContact__image{
+    width: 50%;
+}
+.emergencyContact__content{
+    width: 50%;
+    padding: 0 10vw 0 10vw;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.emergencyContact__content >div  p{
+    color: var(--grayFontcolor);
+    margin-bottom: 4vh;
+}
+.emergencyContact__title{
+    color: var(--principal);
+    margin-top: 10vh;
+    margin-bottom: 6vh;
+}
+
+.emergencyContact__cards{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.emergencyContact__card{
+    padding: 20px 20px;
+    border: 1px solid var(--backgroundColorBlue);
+    border-radius: 5px;
+    margin-bottom: 4vw;
+    color: var(--principal);
+    font-weight: bold;
+    display: flex;   
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(50% - 2vw);
+}
+
+
+.emergencyContact__card button{    
+    border-radius: 5px;    
+    background-color: var(--backgroundColorBlue);
+    color: var(--secondary);
+    font-weight: bold;    
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 1vw;
+}
+
+.emergencyContact__card-selected button{    
+    background-color: var(--secondary);
+    color: white;
+}
+
+
+.emergencyContact__card .material-icons{
+    margin-right: 10px;
+}
+.emergencyContact__card__header{
+    display: flex;    
+    margin-bottom: 20px;
+}
+.emergencyContact__card__label{
+    font-size: 1vw;   
+    display: block;
+}
+.icon-blueBig {
+    color: var(--principal);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--backgroundColorBlue);
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+.emergencyContact__card__phonenumber{
+    color: var(--grayFontcolor);
+    font-size: 0.8vw;
+    font-weight: normal;
+}
+.footer{
+    background-color: var(--backgroundColorBlue);
+    padding: 50px 10vw;
+    width: 100%;
+}
+.footer__links{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+.footer__links ul{
+   padding: 0;
+}
+.footer__links li{
+    list-style: none;
+}
+.footer__links a{
+    text-decoration: none;
+    color: var(--grayFontcolor);
+    font-size: 1vw;
+}
+.footer__links__sections{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.footer__links__sections h3{
+    color: var(--principal);
+}
+.footer__legal{
+    display: flex;
+    justify-content: space-between;
+    color: var(--grayFontcolor);
+    font-size: 1vw;
+}
+.footer__goal h3{
+    color: var(--secondary);
+}
+.footer__goal p{
+    color: var(--grayFontcolor);
+}
